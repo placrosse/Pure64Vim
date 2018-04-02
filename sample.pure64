@@ -1,0 +1,16 @@
+# This is for the x86_64 instruction set
+arch: x86_64
+
+# Load the image over the network
+bootsector: pxe
+
+# Load the image with GPT structures
+partition_scheme: gpt
+
+# After initializing the CPU, just call
+# the kernel.
+stage_three: kernel
+
+# Here's where to find the kernel.
+kernel_path: "./path/to/kernel"
+
