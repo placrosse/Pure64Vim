@@ -4,10 +4,10 @@ endif
 
 let b:current_syntax = "pure64"
 
-syn keyword pure64Key arch bootsector disk_size kernel_path partition_scheme stage_three
+syn keyword pure64Key arch bootsector disk_size fs_size kernel_path resource_path partition_scheme stage_three
 hi def link pure64Key Keyword
 
-syn keyword pure64Value mbr multiboot multiboot2 pxe x86_64 loader kernel
+syn keyword pure64Value mbr multiboot multiboot2 pxe x86_64 loader kernel none gpt
 hi def link pure64Value Constant
 
 syn region pure64String start='"' end='"'
